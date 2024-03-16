@@ -11,17 +11,17 @@ public class Program
         Console.WriteLine("Max value: " + max);
     }
 
-    public static double CalculateAverage(int[] numbers){
-        if (numbers == null || numbers.Length == 0){
+    public static double CalculateAverage(int[] TabNumber){
+        if (TabNumber == null || TabNumber.Length == 0){
             throw new ArgumentException("Array cannot be null or empty.");
         }
 
         int sum = 0;
-        foreach (int num in numbers){
+        foreach (int num in TabNumber){
             sum += num;
         }
 
-        return (double)sum / numbers.Length;
+        return (double)sum / TabNumber.Length;
     }
     
     public static int FindMaxValue(int[] numbers)
