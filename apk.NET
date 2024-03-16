@@ -16,12 +16,12 @@ public class Program
             throw new ArgumentException("Array cannot be null or empty.");
         }
 
-        int sum = 0;
-        foreach (int num in TabNumber){
-            sum += num;
+        int suma = 0;
+        foreach (int numa in TabNumber){
+            suma += numa;
         }
 
-        return (double)sum / TabNumber.Length;
+        return (double)suma / TabNumber.Length;
     }
     
     public static int FindMaxValue(int[] numbers)
