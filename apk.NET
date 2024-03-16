@@ -11,8 +11,9 @@ public class Program
         Console.WriteLine("Max value: " + max);
     }
 
-    public static double CalculateAverage(int[] TabNumber){
-        if (TabNumber == null || TabNumber.Length == 0){
+
+    public static double CalculateAverage(int[] numbers){
+        if (numbers == null || numbers.Length == 0){
             throw new ArgumentException("Array cannot be null or empty.");
         }
 
